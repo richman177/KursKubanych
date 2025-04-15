@@ -14,7 +14,7 @@ class Teacher(models.Model):
     teacher_bio = models.TextField()
     teacher_image = models.ImageField(upload_to='teacher_images/', null=True, blank=True)
     profession = models.ForeignKey(Profession, on_delete=models.CASCADE)
-    social_akk = models.FileField(upload_to='social')
+    social_akk = models.URLField()
 
     def __str__(self):
         return f'{self.name}'

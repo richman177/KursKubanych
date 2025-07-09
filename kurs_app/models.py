@@ -6,7 +6,7 @@ class Profession(models.Model):
     profession_name = models.CharField(max_length=60) 
 
     def __str__(self):
-        return f'{self.profession_name}'
+        return f'{self.profession_name}' 
 
 
 class Teacher(models.Model):

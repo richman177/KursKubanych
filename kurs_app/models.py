@@ -9,7 +9,7 @@ class Profession(models.Model):
         return f'{self.profession_name}' 
 
 
-class Teacher(models.Model):
+class Teacher(models.Model): 
     name = models.CharField(max_length=32) 
     teacher_bio = models.TextField()
     teacher_image = models.ImageField(upload_to='teacher_images/', null=True, blank=True)

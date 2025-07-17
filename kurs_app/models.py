@@ -2,7 +2,7 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator 
 
 
-class Profession(models.Model):
+class Profession(models.Model): 
     profession_name = models.CharField(max_length=60) 
 
     def __str__(self):

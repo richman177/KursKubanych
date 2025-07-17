@@ -11,7 +11,7 @@ class Profession(models.Model):
 
 class Teacher(models.Model): 
     name = models.CharField(max_length=32) 
-    teacher_bio = models.TextField()
+    teacher_bio = models.TextField() 
     teacher_image = models.ImageField(upload_to='teacher_images/', null=True, blank=True)
     profession = models.ForeignKey(Profession, on_delete=models.CASCADE)
     social_akk = models.URLField()
